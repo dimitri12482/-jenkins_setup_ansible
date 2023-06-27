@@ -1,1 +1,7 @@
-
+---
+#kube-dependencies.yml
+   - name: install kubelet
+     yum:
+       name: kubelet
+       state: present
+       update_cache: true
